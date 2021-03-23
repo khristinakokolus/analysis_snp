@@ -1,0 +1,3 @@
+D:/UCU/Second/AKS/project/analysis_snp/cmake-build-debug/CMakeFiles/analysis_snp.dir
+D:/UCU/Second/AKS/project/analysis_snp/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/UCU/Second/AKS/project/analysis_snp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
