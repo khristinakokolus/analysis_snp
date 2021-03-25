@@ -1,9 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/analysis_snp.dir/src/check_input.cpp.obj"
-  "CMakeFiles/analysis_snp.dir/src/energy.cpp.obj"
-  "CMakeFiles/analysis_snp.dir/src/main.cpp.obj"
-  "CMakeFiles/analysis_snp.dir/src/plot.cpp.obj"
-  "CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.obj"
+  "CMakeFiles/analysis_snp.dir/src/example.cpp.obj"
   "analysis_snp.exe"
   "analysis_snp.exe.manifest"
   "analysis_snp.pdb"

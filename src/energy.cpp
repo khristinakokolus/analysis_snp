@@ -1,6 +1,7 @@
 #include <iostream>
 
 double count_energy(std::string& rna_sequence) {
+
     return 0;
 }
 

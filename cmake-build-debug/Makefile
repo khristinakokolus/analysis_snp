@@ -142,140 +142,32 @@ analysis_snp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/build
 .PHONY : analysis_snp/fast
 
-src/check_input.obj: src/check_input.cpp.obj
+src/example.obj: src/example.cpp.obj
 
-.PHONY : src/check_input.obj
-
-# target to build an object file
-src/check_input.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/check_input.cpp.obj
-.PHONY : src/check_input.cpp.obj
-
-src/check_input.i: src/check_input.cpp.i
-
-.PHONY : src/check_input.i
-
-# target to preprocess a source file
-src/check_input.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/check_input.cpp.i
-.PHONY : src/check_input.cpp.i
-
-src/check_input.s: src/check_input.cpp.s
-
-.PHONY : src/check_input.s
-
-# target to generate assembly for a file
-src/check_input.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/check_input.cpp.s
-.PHONY : src/check_input.cpp.s
-
-src/energy.obj: src/energy.cpp.obj
-
-.PHONY : src/energy.obj
+.PHONY : src/example.obj
 
 # target to build an object file
-src/energy.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/energy.cpp.obj
-.PHONY : src/energy.cpp.obj
+src/example.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/example.cpp.obj
+.PHONY : src/example.cpp.obj
 
-src/energy.i: src/energy.cpp.i
+src/example.i: src/example.cpp.i
 
-.PHONY : src/energy.i
-
-# target to preprocess a source file
-src/energy.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/energy.cpp.i
-.PHONY : src/energy.cpp.i
-
-src/energy.s: src/energy.cpp.s
-
-.PHONY : src/energy.s
-
-# target to generate assembly for a file
-src/energy.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/energy.cpp.s
-.PHONY : src/energy.cpp.s
-
-src/main.obj: src/main.cpp.obj
-
-.PHONY : src/main.obj
-
-# target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
+.PHONY : src/example.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/example.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/example.cpp.i
+.PHONY : src/example.cpp.i
 
-src/main.s: src/main.cpp.s
+src/example.s: src/example.cpp.s
 
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/plot.obj: src/plot.cpp.obj
-
-.PHONY : src/plot.obj
-
-# target to build an object file
-src/plot.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/plot.cpp.obj
-.PHONY : src/plot.cpp.obj
-
-src/plot.i: src/plot.cpp.i
-
-.PHONY : src/plot.i
-
-# target to preprocess a source file
-src/plot.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/plot.cpp.i
-.PHONY : src/plot.cpp.i
-
-src/plot.s: src/plot.cpp.s
-
-.PHONY : src/plot.s
+.PHONY : src/example.s
 
 # target to generate assembly for a file
-src/plot.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/plot.cpp.s
-.PHONY : src/plot.cpp.s
-
-src/sequence_processing.obj: src/sequence_processing.cpp.obj
-
-.PHONY : src/sequence_processing.obj
-
-# target to build an object file
-src/sequence_processing.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.obj
-.PHONY : src/sequence_processing.cpp.obj
-
-src/sequence_processing.i: src/sequence_processing.cpp.i
-
-.PHONY : src/sequence_processing.i
-
-# target to preprocess a source file
-src/sequence_processing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.i
-.PHONY : src/sequence_processing.cpp.i
-
-src/sequence_processing.s: src/sequence_processing.cpp.s
-
-.PHONY : src/sequence_processing.s
-
-# target to generate assembly for a file
-src/sequence_processing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.s
-.PHONY : src/sequence_processing.cpp.s
+src/example.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\analysis_snp.dir\build.make CMakeFiles/analysis_snp.dir/src/example.cpp.s
+.PHONY : src/example.cpp.s
 
 # Help Target
 help:
@@ -286,21 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... analysis_snp
-	@echo ... src/check_input.obj
-	@echo ... src/check_input.i
-	@echo ... src/check_input.s
-	@echo ... src/energy.obj
-	@echo ... src/energy.i
-	@echo ... src/energy.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
-	@echo ... src/plot.obj
-	@echo ... src/plot.i
-	@echo ... src/plot.s
-	@echo ... src/sequence_processing.obj
-	@echo ... src/sequence_processing.i
-	@echo ... src/sequence_processing.s
+	@echo ... src/example.obj
+	@echo ... src/example.i
+	@echo ... src/example.s
 .PHONY : help
 
 

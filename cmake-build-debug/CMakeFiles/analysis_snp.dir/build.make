@@ -76,92 +76,32 @@ include CMakeFiles/analysis_snp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/analysis_snp.dir/flags.make
 
-CMakeFiles/analysis_snp.dir/src/main.cpp.obj: CMakeFiles/analysis_snp.dir/flags.make
-CMakeFiles/analysis_snp.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\UCU\Second\AKS\project\analysis_snp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/analysis_snp.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\analysis_snp.dir\src\main.cpp.obj -c D:\UCU\Second\AKS\project\analysis_snp\src\main.cpp
+CMakeFiles/analysis_snp.dir/src/example.cpp.obj: CMakeFiles/analysis_snp.dir/flags.make
+CMakeFiles/analysis_snp.dir/src/example.cpp.obj: ../src/example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\UCU\Second\AKS\project\analysis_snp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/analysis_snp.dir/src/example.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\analysis_snp.dir\src\example.cpp.obj -c D:\UCU\Second\AKS\project\analysis_snp\src\example.cpp
 
-CMakeFiles/analysis_snp.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/analysis_snp.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\UCU\Second\AKS\project\analysis_snp\src\main.cpp > CMakeFiles\analysis_snp.dir\src\main.cpp.i
+CMakeFiles/analysis_snp.dir/src/example.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/analysis_snp.dir/src/example.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\UCU\Second\AKS\project\analysis_snp\src\example.cpp > CMakeFiles\analysis_snp.dir\src\example.cpp.i
 
-CMakeFiles/analysis_snp.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysis_snp.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\UCU\Second\AKS\project\analysis_snp\src\main.cpp -o CMakeFiles\analysis_snp.dir\src\main.cpp.s
-
-CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.obj: CMakeFiles/analysis_snp.dir/flags.make
-CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.obj: ../src/sequence_processing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\UCU\Second\AKS\project\analysis_snp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\analysis_snp.dir\src\sequence_processing.cpp.obj -c D:\UCU\Second\AKS\project\analysis_snp\src\sequence_processing.cpp
-
-CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\UCU\Second\AKS\project\analysis_snp\src\sequence_processing.cpp > CMakeFiles\analysis_snp.dir\src\sequence_processing.cpp.i
-
-CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\UCU\Second\AKS\project\analysis_snp\src\sequence_processing.cpp -o CMakeFiles\analysis_snp.dir\src\sequence_processing.cpp.s
-
-CMakeFiles/analysis_snp.dir/src/energy.cpp.obj: CMakeFiles/analysis_snp.dir/flags.make
-CMakeFiles/analysis_snp.dir/src/energy.cpp.obj: ../src/energy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\UCU\Second\AKS\project\analysis_snp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/analysis_snp.dir/src/energy.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\analysis_snp.dir\src\energy.cpp.obj -c D:\UCU\Second\AKS\project\analysis_snp\src\energy.cpp
-
-CMakeFiles/analysis_snp.dir/src/energy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/analysis_snp.dir/src/energy.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\UCU\Second\AKS\project\analysis_snp\src\energy.cpp > CMakeFiles\analysis_snp.dir\src\energy.cpp.i
-
-CMakeFiles/analysis_snp.dir/src/energy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysis_snp.dir/src/energy.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\UCU\Second\AKS\project\analysis_snp\src\energy.cpp -o CMakeFiles\analysis_snp.dir\src\energy.cpp.s
-
-CMakeFiles/analysis_snp.dir/src/plot.cpp.obj: CMakeFiles/analysis_snp.dir/flags.make
-CMakeFiles/analysis_snp.dir/src/plot.cpp.obj: ../src/plot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\UCU\Second\AKS\project\analysis_snp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/analysis_snp.dir/src/plot.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\analysis_snp.dir\src\plot.cpp.obj -c D:\UCU\Second\AKS\project\analysis_snp\src\plot.cpp
-
-CMakeFiles/analysis_snp.dir/src/plot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/analysis_snp.dir/src/plot.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\UCU\Second\AKS\project\analysis_snp\src\plot.cpp > CMakeFiles\analysis_snp.dir\src\plot.cpp.i
-
-CMakeFiles/analysis_snp.dir/src/plot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysis_snp.dir/src/plot.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\UCU\Second\AKS\project\analysis_snp\src\plot.cpp -o CMakeFiles\analysis_snp.dir\src\plot.cpp.s
-
-CMakeFiles/analysis_snp.dir/src/check_input.cpp.obj: CMakeFiles/analysis_snp.dir/flags.make
-CMakeFiles/analysis_snp.dir/src/check_input.cpp.obj: ../src/check_input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\UCU\Second\AKS\project\analysis_snp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/analysis_snp.dir/src/check_input.cpp.obj"
-	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\analysis_snp.dir\src\check_input.cpp.obj -c D:\UCU\Second\AKS\project\analysis_snp\src\check_input.cpp
-
-CMakeFiles/analysis_snp.dir/src/check_input.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/analysis_snp.dir/src/check_input.cpp.i"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\UCU\Second\AKS\project\analysis_snp\src\check_input.cpp > CMakeFiles\analysis_snp.dir\src\check_input.cpp.i
-
-CMakeFiles/analysis_snp.dir/src/check_input.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysis_snp.dir/src/check_input.cpp.s"
-	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\UCU\Second\AKS\project\analysis_snp\src\check_input.cpp -o CMakeFiles\analysis_snp.dir\src\check_input.cpp.s
+CMakeFiles/analysis_snp.dir/src/example.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/analysis_snp.dir/src/example.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\UCU\Second\AKS\project\analysis_snp\src\example.cpp -o CMakeFiles\analysis_snp.dir\src\example.cpp.s
 
 # Object files for target analysis_snp
 analysis_snp_OBJECTS = \
-"CMakeFiles/analysis_snp.dir/src/main.cpp.obj" \
-"CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.obj" \
-"CMakeFiles/analysis_snp.dir/src/energy.cpp.obj" \
-"CMakeFiles/analysis_snp.dir/src/plot.cpp.obj" \
-"CMakeFiles/analysis_snp.dir/src/check_input.cpp.obj"
+"CMakeFiles/analysis_snp.dir/src/example.cpp.obj"
 
 # External object files for target analysis_snp
 analysis_snp_EXTERNAL_OBJECTS =
 
-analysis_snp.exe: CMakeFiles/analysis_snp.dir/src/main.cpp.obj
-analysis_snp.exe: CMakeFiles/analysis_snp.dir/src/sequence_processing.cpp.obj
-analysis_snp.exe: CMakeFiles/analysis_snp.dir/src/energy.cpp.obj
-analysis_snp.exe: CMakeFiles/analysis_snp.dir/src/plot.cpp.obj
-analysis_snp.exe: CMakeFiles/analysis_snp.dir/src/check_input.cpp.obj
+analysis_snp.exe: CMakeFiles/analysis_snp.dir/src/example.cpp.obj
 analysis_snp.exe: CMakeFiles/analysis_snp.dir/build.make
 analysis_snp.exe: CMakeFiles/analysis_snp.dir/linklibs.rsp
 analysis_snp.exe: CMakeFiles/analysis_snp.dir/objects1.rsp
 analysis_snp.exe: CMakeFiles/analysis_snp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\UCU\Second\AKS\project\analysis_snp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable analysis_snp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\UCU\Second\AKS\project\analysis_snp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable analysis_snp.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\analysis_snp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -82,31 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/inc/check_input.h">
-			<Option target="analysis_snp"/>
-		</Unit>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/inc/energy.h">
-			<Option target="analysis_snp"/>
-		</Unit>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/inc/plot.h">
-			<Option target="analysis_snp"/>
-		</Unit>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/inc/sequence_processing.h">
-			<Option target="analysis_snp"/>
-		</Unit>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/src/check_input.cpp">
-			<Option target="analysis_snp"/>
-		</Unit>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/src/energy.cpp">
-			<Option target="analysis_snp"/>
-		</Unit>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/src/main.cpp">
-			<Option target="analysis_snp"/>
-		</Unit>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/src/plot.cpp">
-			<Option target="analysis_snp"/>
-		</Unit>
-		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/src/sequence_processing.cpp">
+		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/src/example.cpp">
 			<Option target="analysis_snp"/>
 		</Unit>
 		<Unit filename="D:/UCU/Second/AKS/project/analysis_snp/CMakeLists.txt">
