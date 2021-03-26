@@ -14,13 +14,13 @@ std::string energy_search(std::string content) {
 
     while (regex_search(content, match, expr)) {
         for (auto x : match){
-            std::cout << x << " ";
             return x;
         }
 
         std::cout << std::endl;
         content = match.suffix().str();
     }
+    return 0;
 
 }
 
@@ -45,10 +45,6 @@ std::string get_output(const std::string& cmd) {
 
 
 
-
-
-
-
 // count energy using function RNAfold from  ViennaRNA package
 double count_energy(std::string& rna_sequence) {
 
@@ -56,7 +52,15 @@ double count_energy(std::string& rna_sequence) {
     seq << rna_sequence;
     seq.close();
 
+    #ifdef _WIN32
+    // need to be a full path to the executable file
+    std::string res = get_output("D:\\UCU\\Second\\AKS\\project\\ViennaRNA\\RNAfold.exe sequence.txt");
+    #endif
+
+    #ifdef linux
     std::string res = get_output("RNAfold sequence.txt");
+    #endif
+
 
     double energy = stod(energy_search(res));
 
@@ -67,9 +71,11 @@ double count_energy(std::string& rna_sequence) {
 // count the difference between the energies released by initial RNA sequence and mutated RNA sequence
 double count_difference(rna_configuration& rna_config) {
     double initial_energy = count_energy(rna_config.rna_sequence_initial);
-    double mutated_energy = count_energy(rna_config.rna_sequence_initial);
+    std::cout << "Initial rna sequence free energy: " << initial_energy << std::endl;
+    double mutated_energy = count_energy(rna_config.rna_sequence_to_mutate);
+    std::cout << "Mutated rna sequence free energy: " << mutated_energy << std::endl;
     double difference = std::abs(initial_energy - mutated_energy);
-    std::cout<<"diff: "<<difference<<std::endl;
+    std::cout<<"Energy difference: "<<difference<<std::endl;
     return difference;
 }
 
