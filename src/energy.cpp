@@ -1,7 +1,6 @@
 #include <iostream>
 #include "../inc/reading_conf.h"
 #include <cstdio>
-#include <memory>
 #include <string>
 #include <array>
 #include <cstdlib>
@@ -71,9 +70,9 @@ double count_energy(std::string& rna_sequence) {
 // count the difference between the energies released by initial RNA sequence and mutated RNA sequence
 double count_difference(rna_configuration& rna_config) {
     double initial_energy = count_energy(rna_config.rna_sequence_initial);
-    std::cout << "Initial rna sequence free energy: " << initial_energy << std::endl;
+    std::cout << "Initial RNA sequence free energy: " << initial_energy << std::endl;
     double mutated_energy = count_energy(rna_config.rna_sequence_to_mutate);
-    std::cout << "Mutated rna sequence free energy: " << mutated_energy << std::endl;
+    std::cout << "Mutated RNA sequence free energy: " << mutated_energy << std::endl;
     double difference = std::abs(initial_energy - mutated_energy);
     std::cout<<"Energy difference: "<<difference<<std::endl;
     return difference;
@@ -81,7 +80,7 @@ double count_difference(rna_configuration& rna_config) {
 
 //check for the positive control
 bool positive_control(const double difference) {
-    const int minimal_difference = 20; // for example
+    const int minimal_difference = 20; // NOT the exact value
     if (difference >= minimal_difference) {
         return true;
     }

@@ -12,7 +12,7 @@ Welcome to the Analysis single nucleotide polymorphism project!
 ## Description
 
 The main idea of our project is to analyse the mutations of the given RNA sequence and compare 
-minimum free energy of the initial RNA sequence and mutated one. This helps to understand how
+minimum free energy of the initial RNA sequence and mutated one using RNAfold tool from [ViennaRNA package](https://www.tbi.univie.ac.at/RNA/). This helps to understand how
 the secondary structure of the protein can change due to changes in RNA sequences. In addition to this, 
 it can have a different affect on the properties of the protein that changes.
 
