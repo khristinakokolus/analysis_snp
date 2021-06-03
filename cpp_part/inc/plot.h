@@ -1,0 +1,4 @@
+#ifndef ANALYSIS_SNP_PLOT_H
+#define ANALYSIS_SNP_PLOT_H
+
+#endif //ANALYSIS_SNP_PLOT_H
