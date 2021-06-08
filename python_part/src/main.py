@@ -9,7 +9,7 @@ def main():
     first_model = read_data(first_archive)
     second_model = read_data(second_archive)
 
-    get_data(first_model, second_model)
+    get_data() #first_model, second_model)
 
 
 if __name__ == '__main__':
