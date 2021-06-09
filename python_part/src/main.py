@@ -1,15 +1,20 @@
 import sys
-from src.data_processing import read_data, get_data
+from src.data_processing import read_data, get_data, process_results,\
+    write_text_results, write_images_results
 
 
 def main():
-    first_archive = "S609367_results.tar.bz2"
-    second_archive = "S611234_results.tar.bz2"
+    """
+    Performs the main steps of the program.
 
-    first_model = read_data(first_archive)
-    second_model = read_data(second_archive)
-
-    get_data() #first_model, second_model)
+    :return:
+    """
+    first_model = read_data("../data/S609367_results.tar.bz2")
+    second_model = read_data("../data/S609367_results.tar.bz2")
+    url_result = get_data(first_model, second_model)
+    alignment_text_results, images_urls = process_results(url_result)
+    write_text_results(alignment_text_results)
+    write_images_results(images_urls)
 
 
 if __name__ == '__main__':
