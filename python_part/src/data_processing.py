@@ -56,56 +56,56 @@ def generate_request(first_filename: str, second_filename: str) -> requests.Requ
     """
     with open(first_filename, 'rb') as file1, open(second_filename, 'rb') as file2:
         boundary = "----WebKitFormBoundarytKR9cLsozlaHcPPb"
-        content = f"""------WebKitFormBoundarytKR9cLsozlaHcPPb
+        content = f"""--{boundary}
 Content-Disposition: form-data; name="pdbid1"
 
 2AAK
-------WebKitFormBoundarytKR9cLsozlaHcPPb
+--{boundary}
 Content-Disposition: form-data; name="chainid1"
 
 A
-------WebKitFormBoundarytKR9cLsozlaHcPPb
+--{boundary}
 Content-Disposition: form-data; name="file_pdb_1"; filename="{first_filename}"
 Content-Type: application/x-aportisdoc
 
 """.replace('\n', '\r\n') + file1.read().decode('utf-8') + f"""
-------WebKitFormBoundarytKR9cLsozlaHcPPb
+--{boundary}
 Content-Disposition: form-data; name="chainid1_2"
 
 
-------WebKitFormBoundarytKR9cLsozlaHcPPb
+--{boundary}
 Content-Disposition: form-data; name="pdbid2"
 
 2VRR
-------WebKitFormBoundarytKR9cLsozlaHcPPb
+--{boundary}
 Content-Disposition: form-data; name="chainid2"
 
 A
-------WebKitFormBoundarytKR9cLsozlaHcPPb
+--{boundary}
 Content-Disposition: form-data; name="file_pdb_2"; filename="{second_filename}"
 Content-Type: application/x-aportisdoc
 
 """.replace('\n', '\r\n') + file2.read().decode('utf-8') + f"""
-------WebKitFormBoundarytKR9cLsozlaHcPPb
+--{boundary}
 Content-Disposition: form-data; name="chainid2_2"
 
 
-------WebKitFormBoundarytKR9cLsozlaHcPPb
+--{boundary}
 Content-Disposition: form-data; name="ali"
 
 global
-------WebKitFormBoundarytKR9cLsozlaHcPPb--""".replace('\n', '\r\n')
+--{boundary}--""".replace('\n', '\r\n')
         request = requests.Request('POST', 'https://www.dsimb.inserm.fr/dsimb_tools/ipba/cgi-bin/ipba.pl',
                                    {
-                                    'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundarytKR9cLsozlaHcPPb',
-                                    'Content-length': f'{len(content)}'})
+                                       'Content-Type':
+                                           'multipart/form-data; boundary=----WebKitFormBoundarytKR9cLsozlaHcPPb',
+                                       'Content-length': f'{len(content)}'})
 
         request.data = content
         return request
 
 
 def process_results(requested_data: str) -> tuple:
-
     # getting aligned models images urls
     data_for_images = requested_data.split("\"")
     images_urls = []

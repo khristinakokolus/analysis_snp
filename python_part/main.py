@@ -18,6 +18,5 @@ def main(first_archive, second_archive):
 
 
 if __name__ == '__main__':
-    first_archive = "data/S611234_results.tar.bz2"
-    second_archive = "data/S610689_results.tar.bz2"
-    main(first_archive, second_archive)
+    first, second = sys.argv[1:]
+    main(first, second)
