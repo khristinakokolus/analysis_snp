@@ -11,11 +11,11 @@ def read_data(archive_name: str) -> str:
     :return: best predicted model from I_TASSER.
     """
     tar = tarfile.open(archive_name)
-    tar.extractall("../data/")
+    tar.extractall("data/")
     tar.close()
 
     file_path = archive_name.split("tar")[0]
-    model_file = file_path[:len(file_path) - 1] + "/" + "model2.pdb"
+    model_file = file_path[:len(file_path) - 1] + "/" + "model1.pdb"
     file = open(model_file, "r")
     content = file.read()
 
@@ -23,11 +23,10 @@ def read_data(archive_name: str) -> str:
     new_file = open(name[-1] + "_model.pdb", "w")
     new_file.write(content)
     new_file.close()
-    print(name[-1] + "_model.pdb")
     return name[-1] + "_model.pdb"
 
 
-def get_data(first_model: str, second_model: str) -> list:
+def get_data(first_model: str, second_model: str) -> str:
     """
     Sends http request to the IPBA website and gets the information about the proteins models alignment.
 
@@ -133,7 +132,7 @@ def process_results(requested_data: str) -> tuple:
 
 
 def write_text_results(alignment_information) -> None:
-    file_path = "../results/alignment_information/alignment_results.txt"
+    file_path = "results/alignment_information/alignment_results.txt"
     file = open(file_path, "a")
     alignment_terms = ["Normalized score", "RMSD\t\t\t", "Alignment length",
                        "Aligned residues", "Fraction aligned", "GDT TS\t\t\t"]
@@ -145,7 +144,7 @@ def write_text_results(alignment_information) -> None:
 
 
 def write_images_results(images_urls: list) -> None:
-    file_path = "../results/aligned_models/aligned_model1_model2"
+    file_path = "results/aligned_models/aligned_model1_model2"
     urls_amount = len(images_urls)
     for i in range(urls_amount):
         response = requests.get(images_urls[i])
