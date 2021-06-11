@@ -1,7 +1,0 @@
-			ALIGNMENT INFORMATION
-Normalized score	257.30
-RMSD				1.43
-Alignment length	578
-Aligned residues	382
-Fraction aligned	66.09 %
-GDT TS				54.79
