@@ -11,10 +11,13 @@ Welcome to the Analysis single nucleotide polymorphism project!
 
 ## Description
 
-The main idea of our project is to analyse the mutations of the given RNA sequence and compare 
+The main idea of our project is to analyse protein KLF-10 and mutations of it to find how they can affect a person's health.
+
+First of all, we analysed the mutations of its RNA sequence and compared
 minimum free energy of the initial RNA sequence and mutated one using RNAfold tool from [ViennaRNA package](https://www.tbi.univie.ac.at/RNA/). This helps to understand how
-the secondary structure of the protein can change due to changes in RNA sequences. In addition to this, 
-it can have a different affect on the properties of the protein that changes.
+the secondary structure of the protein can change due to changes in RNA sequences. In addition to this, it can have a different affect on the properties of the protein that changes.
+
+Then we analysed the structure of the protein using modeling of it. We used PyMol program and [IPBA website](https://www.dsimb.inserm.fr/dsimb_tools/ipba/) for the investigation of the similrity of the mutated structures and initial ones. We worked with RMSD coefficient and other alignment characteristics.
 
 
 ## Prerequisites
@@ -29,18 +32,20 @@ git clone https://github.com/khristinakokolus/analysis_snp.git
 
  - **C++ compiler** - needs to support **C++17** standard
  - **CMake** 3.16+
+ - **Python3**
+ - **ViennaRNA library** from its [website](https://www.tbi.univie.ac.at/RNA/)
 
 
 ## Usage
 
+### RNA part
+
 First of all to use the program you need to compile project using CMakeLists.txt.
 
-To do this, use such commands
-
-- the last command is to run the program:
+To do this, use such commands (the last command is to run the program):
 
 ```
- cd analysis_snp
+ cd analysis_snp/rna_part
  mkdir build 
  cd build
  cmake .. -G"Unix Makefiles"
@@ -48,18 +53,40 @@ To do this, use such commands
 ./analysis_snp ../files/config.dat 
 ```
 
+### Protein's alignment part
 
-## General project layout
+- You need to get the protein structures in pdb format using [I-TASSER server](https://zhanglab.dcmb.med.umich.edu/I-TASSER/)
+- After getting the results from the server you need to download the archive, that you need to run the program
+- For the program you need two such archives as it compares two structures.
+- Then to run it you need:
 
----------------------------------FIRST STAGE-------------------------------------------
+```
+ cd analysis_snp/proteins_alignment_part
+ python3 main.py <path to the first archive with pdb model> <path to the second archive with pdb model>
+```
 
-- investigated RNA using the sequence of KLF-10 
-- checked that the structure did not change on the RNA level using different SNP 
-- developed program that calculates the difference between free energies of initial RNA sequence and
-mutated one
-- also, program checks the presence of positive control to demonstrate the effectiveness of the analysis
+- As a result you will get the images of the aligned structures. For example:
 
-## First presentation
+![](https://github.com/khristinakokolus/analysis_snp/blob/main/proteins_alignment_part/results/aligned_models/aligned_model1_model2_0.png)
 
-[First presentation slides](https://docs.google.com/presentation/d/1_QqVUQ53NHF7gMcyIXJ_fm0A76vAPXjJRwrjR3mN050/edit#slide=id.g4dfce81f19_0_45)
+And also you will get for example such text result:
+
+ALIGNMENT INFORMATION
+
+Normalized score	257.30
+
+RMSD				1.43
+
+Alignment length	578
+
+Aligned residues	382
+
+Fraction aligned	66.09 %
+
+GDT TS				54.79
+
+
+## Final presentation
+
+[Final presentation slides](https://docs.google.com/presentation/d/1IRuM_YE0PGwldhNBjDSiaXo3K0y3PBIOh62zI05HZS4/edit?usp=sharing)
 
